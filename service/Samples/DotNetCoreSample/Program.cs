@@ -1,11 +1,11 @@
-﻿using System;
+﻿using Microsoft.Azure.Devices;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.Azure.Devices;
 
-namespace ConsoleSample
+namespace DotNetCoreSample
 {
     class Program
     {
@@ -42,10 +42,11 @@ namespace ConsoleSample
                 {
                     Console.WriteLine($"{ex}");
                 }
-               
+
             }
 
         }
+
 
         static async Task SendMessage()
         {
